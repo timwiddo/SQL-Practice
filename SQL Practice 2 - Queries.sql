@@ -171,9 +171,12 @@ JOIN
     Products p ON m.Code = p.Manufacturer
 WHERE 
     p.Price = (
-        SELECT MAX(p2.Price)
-        FROM Products p2
-        WHERE p2.Manufacturer = m.Code
+        SELECT 
+		MAX(p2.Price)
+        FROM 
+		Products p2
+        WHERE 
+	        p2.Manufacturer = m.Code
     )
 
 -- 1.17 Add a new product: Loudspeakers, $70, manufacturer 2.
@@ -208,6 +211,9 @@ SET
 
 -- 1.20 Apply a 10% discount to all products with a price larger than or equal to $120.
 
-UPDATE Products
-SET Price = Price * 0.9
-WHERE Price >= 120
+UPDATE 
+	Products
+SET 
+	Price = Price * 0.9
+WHERE 
+	Price >= 120
