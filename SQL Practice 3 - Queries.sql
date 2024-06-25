@@ -69,13 +69,13 @@ ON
 --3.8 Select the warehouse codes, along with the number of boxes in each warehouse. 
     -- Optionally, take into account that some warehouses are empty (i.e., the box count should show up as zero, instead of omitting the warehouse from the result).
 
-	SELECT
-		Warehouse,
-		COUNT(*)
-	FROM
-		Boxes
-	GROUP BY
-		Warehouse
+SELECT
+	Warehouse,
+	COUNT(*)
+FROM
+	Boxes
+GROUP BY
+	Warehouse
 
 --3.9 Select the codes of all warehouses that are saturated (a warehouse is saturated if the number of boxes in it is larger than the warehouse's capacity).
 
