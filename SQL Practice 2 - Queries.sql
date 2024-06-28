@@ -140,7 +140,7 @@ WHERE
 			AVG(Budget)
 		FROM
 			Departments
-			)
+			 )
 
 -- 2.14 Select the names of departments with more than two employees.
 
