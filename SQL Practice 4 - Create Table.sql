@@ -10,7 +10,7 @@ CREATE TABLE MovieTheaters (
   Code INTEGER PRIMARY KEY,
   Name VARCHAR(255) NOT NULL,
   Movie INTEGER,  
-    FOREIGN KEY (Movie) REFERENCES Movies(Code)
+  FOREIGN KEY (Movie) REFERENCES Movies(Code)
 ) 
 
 INSERT INTO Movies(Code,Title,Rating) VALUES(1,'Citizen Kane','PG');
