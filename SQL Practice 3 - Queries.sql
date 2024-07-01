@@ -154,7 +154,7 @@ IN
     WHERE 
 		Capacity <		--capacity < boxes inside warehouse
        (
-		SELECT			--gives the count of boxes in warehouse
+		 SELECT			--gives the count of boxes in warehouse
 			COUNT(*)
         FROM 
 			Boxes
