@@ -52,7 +52,7 @@ ON
 SELECT 
 	*
 FROM 
-	MovieTheaters t
+	 MovieTheaters t
 RIGHT JOIN 
 	Movies m
 ON 
