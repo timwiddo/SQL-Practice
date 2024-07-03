@@ -14,7 +14,7 @@ CREATE TABLE Products (
 	Manufacturer INTEGER NOT NULL,
 	PRIMARY KEY (Code),
 	FOREIGN KEY (Manufacturer) REFERENCES	Manufacturers(Code)
-	) 
+	 ) 
 -- make sure to refresh SMSS Object explorer now
 INSERT INTO Manufacturers(Code,Name) VALUES(1,'Sony');
 INSERT INTO Manufacturers(Code,Name) VALUES(2,'Creative Labs');
