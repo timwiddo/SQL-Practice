@@ -1,7 +1,7 @@
 -- 2.1 Select the last name of all employees.
 
 SELECT
-	LastName
+	 LastName
 FROM
 	Employees
 
